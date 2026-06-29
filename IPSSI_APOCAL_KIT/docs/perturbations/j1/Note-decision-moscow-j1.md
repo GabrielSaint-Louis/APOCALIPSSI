@@ -1,6 +1,6 @@
 # Note de décision — Intégration cible enseignante (Perturbation J1)
 
-> Équipe : [ Numéro d'équipe ]  
+> Équipe : Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS 
 > Date : 29/06/2026 — 14h00  
 > Version : v1.0  
 > Statut : En revue PO
