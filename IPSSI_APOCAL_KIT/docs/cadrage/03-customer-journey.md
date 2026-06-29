@@ -1,6 +1,6 @@
 # Customer Journey Maps — EduTutor IA
 
-> CADRAGE MATINAL · ARTEFACT 4 SUR 7
+> CADRAGE MATINAL · ARTEFACT 3 SUR 7
 > Projet EduTutor IA · Édition 2026 · Semaine immersive Scrum
 > Auteur : Monica RADIFERA RASAMOELIJAONA · Licence CC BY-NC-SA 4.0
 
@@ -13,11 +13,11 @@
 | **Équipe n°**       | 21                                                                                                                |
 | **Membres**         | Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS |
 | **Sprint concerné** | Cadrage                                                                                                           |
-| **Version**         | v1.0 (initiale)                                                                                                   |
+| **Version**         | v1.1 (révision PO)                                                                                                |
 | **Date de remise**  | 29/06/2026 avant 13h00                                                                                            |
-| **Statut**          | Draft                                                                                                             |
+| **Statut**          | En revue PO                                                                                                       |
 
-> 💡 Convention de nommage : `equipe-21-customer-journey-v1.0.md`
+> 💡 Convention de nommage : `equipe-21-customer-journey-v1.1.md`
 
 ---
 
@@ -30,7 +30,7 @@ Le journey map sert à repérer le moment exact où la persona décroche — c'e
 Ce document contient **3 parcours** :
 
 - **Camille Martin** (étudiante, cible primaire)
-- **Mme Sophie Lefèvre** (enseignante, cible secondaire émergente J1)
+- **Mme Sophie Lefèvre** (enseignante, cible secondaire intégrée dès le cadrage et la Release 1 sur demande du PO)
 - **M. David Chen** (directeur d'établissement, cible tertiaire B2B)
 
 > 💡 Le parcours « Établissement » suit un cycle d'achat B2B et non un parcours utilisateur classique. Les 5 étapes sont adaptées en conséquence.
@@ -63,29 +63,33 @@ Ce document contient **3 parcours** :
 
 ---
 
-## 2. Parcours Enseignant — Mme Sophie Lefèvre (cible secondaire)
+## 2. Parcours Enseignant — Mme Sophie Lefèvre (cible secondaire intégrée Release 1)
 
-> **Rappel persona** : Sophie Lefèvre, 42 ans, professeure de Communication BTS, lycée privé sous contrat à Lyon 6e. 28 étudiants. Crée manuellement ~3 quiz/semaine (90 min chacun). DPO de l'établissement a bloqué ChatGPT. Exige des engagements RGPD écrits. Power user Word/Excel, allergique au CLI.
+> **Rappel persona** : Sophie Lefèvre, 42 ans, professeure de Communication BTS, lycée privé sous contrat à Lyon 6e. 28 étudiants. Crée manuellement ~3 quiz/semaine (90 min chacun). DPO de l'établissement a bloqué ChatGPT. Exige des engagements RGPD écrits. Power user Word/Excel, allergique au CLI. Le PO demande explicitement de l'intégrer dès le cadrage et dans la Release 1.
 
-**Objectif du parcours** : Décrire comment Mme Lefèvre découvre, évalue et adopte EduTutor IA dans un contexte professionnel contraint (conformité RGPD, 28 étudiants à charge, direction à convaincre).
+**Objectif du parcours** : Décrire comment Mme Lefèvre découvre, évalue et adopte EduTutor IA dans un contexte professionnel contraint (conformité RGPD, 28 étudiants à charge, direction à convaincre, suivi de progression des étudiants).
 
 **Format** : 5 étapes — Découverte → Inscription → 1ʳᵉ utilisation → Usage régulier → Recommandation à la direction.
 
 ### 2.1. Tableau de parcours
 
-| Étape                                | Actions                                                                                                                                                                   | Pensées (au « je »)                                                                                                                                       | Émotion                   | Frictions / Opportunités                                                                                                                                                                    |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1. Découverte**                    | Lit un article du Café Pédagogique sur les outils IA pour enseignants. Note le nom EduTutor IA. Cherche une démo vidéo sur YouTube.                                       | _« Encore une promesse marketing ? Je veux des exemples concrets sur un cours BTS Communication, pas des captures génériques. »_                          | 😐 Curieuse, prudente     | **Friction** : absence d'exemples sectoriels (BTS, lycée, supérieur) sur la landing page. **Opportunité** : démos par niveau scolaire et par discipline.                                    |
-| **2. Inscription**                   | Tente de créer un compte enseignant via le site. Ne trouve pas de formulaire dédié, envoie un email de contact. Attend 24 h une réponse.                                  | _« 24 h pour répondre en 2026 ? Si le SAV amont est aussi lent, comment sera-t-il quand j'aurai 28 étudiants bloqués en cours ? »_                        | 😟 Impatiente, méfiante   | **Friction** : pas d'auto-inscription enseignant — dépendance à un process manuel (décrochage fort). **Opportunité** : compte enseignant gratuit auto-créé + onboarding guidé en 5 minutes. |
-| **3. 1ʳᵉ utilisation**               | Uploade un cours de Communication non-verbale (45 pages). Génère 1 quiz de 10 QCM pour tester avant de l'utiliser en classe. Vérifie chaque question une à une.           | _« Si les questions sont mal formulées ou inventées, je ne peux pas ça donner à mes élèves. Je veux voir les questions AVANT qu'elles soient publiées. »_ | 😐 Vigilante → 😊 Étonnée | **Friction** : pas d'aperçu rapide des questions avant envoi aux élèves. **Opportunité** : mode preview + validation question par question avant publication.                               |
-| **4. Usage régulier**                | Génère 3 quiz / semaine pour ses 28 étudiants. Adapte le niveau de difficulté selon les retours de classe. Exporte en PDF pour impression en salle des profs.             | _« J'ai gagné 4h/semaine sur la préparation. Mais je veux pouvoir corriger rapidement une question erronée sans tout régénérer. »_                        | 😊 Satisfaite, productive | **Friction** : pas d'édition manuelle d'une question après génération. **Opportunité** : éditeur intégré pour correction ciblée d'une question sans re-génération complète.                 |
-| **5. Recommandation à la direction** | Présente l'outil au conseil pédagogique avec un bilan chiffré : 4h/sem économisées, 28 élèves actifs, taux d'erreur < 3%. Demande un budget pour un compte établissement. | _« Je veux prouver le ROI : 4h/sem × 30 sem × 5 profs = 600h/an économisées. Mais j'ai besoin d'un rapport exportable pour le présenter au CA. »_         | 😊 Convaincue             | **Friction** : pas de dashboard de ROI exportable pour la direction. **Opportunité** : rapport mensuel automatique (usage, scores, gains de temps estimés) exportable PDF.                  |
+| Étape                                | Actions                                                                                                                                                                                                             | Pensées (au « je »)                                                                                                                                                                                              | Émotion                   | Frictions / Opportunités                                                                                                                                                                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Découverte**                    | Lit un article du Café Pédagogique sur les outils IA pour enseignants. Note le nom EduTutor IA. Cherche une démo vidéo sur YouTube.                                                                                 | _« Encore une promesse marketing ? Je veux des exemples concrets sur un cours BTS Communication, pas des captures génériques. »_                                                                                 | 😐 Curieuse, prudente     | **Friction** : absence d'exemples sectoriels (BTS, lycée, supérieur) sur la landing page. **Opportunité** : démos par niveau scolaire et par discipline.                                                                                |
+| **2. Inscription**                   | Tente de créer un compte enseignant via le site. Ne trouve pas de formulaire dédié, envoie un email de contact. Attend 24 h une réponse.                                                                            | _« 24 h pour répondre en 2026 ? Si le SAV amont est aussi lent, comment sera-t-il quand j'aurai 28 étudiants bloqués en cours ? »_                                                                               | 😟 Impatiente, méfiante   | **Friction** : pas d'auto-inscription enseignant — dépendance à un process manuel (décrochage fort). **Opportunité** : compte enseignant gratuit auto-créé + onboarding guidé en 5 minutes.                                             |
+| **3. 1ʳᵉ utilisation**               | Uploade un cours de Communication non-verbale (45 pages). Génère 1 quiz de 10 QCM pour tester avant de l'utiliser en classe. Vérifie chaque question une à une.                                                     | _« Si les questions sont mal formulées ou inventées, je ne peux pas ça donner à mes élèves. Je veux voir les questions AVANT qu'elles soient publiées. »_                                                        | 😐 Vigilante → 😊 Étonnée | **Friction** : pas d'aperçu rapide des questions avant envoi aux élèves. **Opportunité** : mode preview + validation question par question avant publication.                                                                           |
+| **4. Usage régulier**                | Génère 3 quiz / semaine pour ses 28 étudiants. Consulte les scores, repère ceux qui décrochent, puis adapte le niveau de difficulté selon les retours de classe. Exporte en PDF pour impression en salle des profs. | _« C'est exactement l'outil qu'il me faut pour suivre la progression de mes 28 étudiants en révision d'examens. Je veux pouvoir voir leurs scores, repérer ceux qui décrochent, et leur envoyer des conseils. »_ | 😊 Satisfaite, productive | **Friction** : pas d'édition manuelle d'une question après génération. **Opportunité** : dashboard de progression, scores, décrocheurs et conseils + éditeur intégré pour correction ciblée d'une question sans re-génération complète. |
+| **5. Recommandation à la direction** | Présente l'outil au conseil pédagogique avec un bilan chiffré : 4h/sem économisées, 28 élèves actifs, taux d'erreur < 3%. Demande un budget pour un compte établissement.                                           | _« Je veux prouver le ROI : 4h/sem × 30 sem × 5 profs = 600h/an économisées. Mais j'ai besoin d'un rapport exportable pour le présenter au CA. »_                                                                | 😊 Convaincue             | **Friction** : pas de dashboard de ROI exportable pour la direction. **Opportunité** : rapport mensuel automatique (usage, scores, gains de temps estimés) exportable PDF.                                                              |
 
 ### 2.2. Moment de décrochage potentiel
 
 > **Étape 2 — Inscription** : si le délai de réponse dépasse 24 h, Mme Lefèvre ne recontacte pas. Les enseignants ont des emplois du temps contraints ; un blocage à l'entrée est rédhibitoire. Critère de succès persona : _« Si ça plante 1 fois en cours devant 28 ados, je n'y reviens jamais. »_
 
 **Investissement produit prioritaire** : self-service inscription enseignant + onboarding guidé en 5 minutes max, sans contact humain requis.
+
+### 2.3. Besoin validé par le PO
+
+> **Le PO demande explicitement d'intégrer Mme Sophie Lefèvre dans le cadrage et dans la Release 1, avec un focus sur le suivi de progression des 28 étudiants, l'affichage des scores, la détection des décrocheurs et l'envoi de conseils.**
 
 ---
 
@@ -142,6 +146,7 @@ Ce document contient **3 parcours** :
 | Priorité | Parcours concerné     | Investissement recommandé                                           | Étape   |
 | -------- | --------------------- | ------------------------------------------------------------------- | ------- |
 | 🔴 P0    | Enseignant            | Self-service inscription enseignant + onboarding 5 min              | Étape 2 |
+| 🔴 P0    | Enseignant            | Dashboard progression + scores + détection décrocheurs + conseils   | Étape 4 |
 | 🔴 P0    | Établissement         | Fiche RGPD pré-rédigée + clause d'essai 3 mois                      | Étape 2 |
 | 🟠 P1    | Étudiant              | Indicateur de progression + message rassurant pendant la génération | Étape 3 |
 | 🟠 P1    | Enseignant            | Mode preview + validation question par question avant publication   | Étape 3 |
@@ -159,13 +164,13 @@ Ce document contient **3 parcours** :
 | Les 3 parcours sont décrits sur les 5 étapes complètes                                | ✅ Oui          | Camille : Découverte → Recommandation / Lefèvre : Découverte → Recommandation direction / Chen : Besoin → Renouvellement |
 | Chaque cellule « Actions » contient une action concrète et observable                 | ✅ Oui          | Ex. : « Uploade son PDF de droit constitutionnel (340 pages) » — observable et testable                                  |
 | Chaque cellule « Pensées » est formulée au « je », entre guillemets                   | ✅ Oui          | Toutes les pensées en italique, au « je », entre guillemets doubles                                                      |
-| Chaque cellule « Émotion » utilise l'échelle 😟 → 😐 → 😊                             | ✅ Oui          | Au moins 1 transition émotionnelle par parcours (ex. : Camille étape 3 : 😟 → 😊)                                        |
+| Chaque cellule « Émotion » utilise l'échelle 😟 → 😐 → 😊                             | ✅ Oui          | Au moins 1 transition émotionnelle par parcours                                                                          |
 | Chaque cellule « Frictions / Opportunités » identifie ≥ 1 friction ET ≥ 1 opportunité | ✅ Oui          | Toutes les cellules contiennent friction + opportunité distinctes et actionnables                                        |
-| Le moment de décrochage est explicitement identifié pour chaque parcours              | ✅ Oui          | Section 1.2, 2.2, 3.2 : décrochage explicite + investissement prioritaire associé                                        |
+| Le moment de décrochage est explicitement identifié pour chaque parcours              | ✅ Oui          | Sections 1.2, 2.2, 3.2 : décrochage explicite + investissement prioritaire associé                                       |
 | La synthèse émotionnelle identifie le bon point de levier produit                     | ✅ Oui          | Section 4.1 : étape 2 identifiée comme levier maximal avec justification par parcours                                    |
 | Le parcours Établissement reflète un cycle d'achat B2B (et pas un usage)              | ✅ Oui          | 5 étapes B2B : Besoin → Évaluation → Décision → Onboarding → Renouvellement                                              |
 | Les fonctionnalités référencées correspondent au MVP (F1-F6) du Product Vision Board  | ✅ Oui          | Upload PDF (F2), génération QCM (F3), correction (F4), score (F5), historique (F6) tous présents                         |
-| Le document a été relu et validé par l'équipe complète                                | ☐ Partiel       | À valider collectivement avant 13h                                                                                       |
+| Le document a été relu et validé par le PO                                            | ☐ Partiel       | Révision PO intégrée ; validation finale à confirmer                                                                     |
 
 ---
 
@@ -181,8 +186,11 @@ Ce document contient **3 parcours** :
 
 ### Convention de versionnement
 
+- `v1.1` — révision après retour PO
 - `v1.0` — version initiale produite lors du cadrage matinal
-- `v1.1`, `v1.2` — révisions mineures (typo, ajout d'item) après revue PO
+- `v1.2`, `v1.3` — révisions mineures après revue PO
 - `v2.0` — révision majeure suite à une perturbation (changement de scope)
 - Chaque version est commitée séparément avec message Git explicite
 - Le statut « Validé PO » nécessite une trace écrite (commentaire, mail, Teams)
+
+---
