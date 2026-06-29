@@ -30,7 +30,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 
 ## 1. Vision
 
-**Pour** les étudiant·e·s du supérieur et les enseignant·e·s  
+**Pour** les étudiant·e·s du supérieur 
 **Qui** veulent réviser ou évaluer efficacement à partir de leurs propres cours  
 **EduTutor IA** est une application web de génération automatique de quiz QCM  
 **Qui** transforme n'importe quel PDF ou texte en quiz corrigé instantanément, sans que les données ne quittent le serveur  
@@ -52,7 +52,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 | **Pain point** | ~3h/semaine perdues à chercher des fiches de révision alignées sur leur cours réel |
 | **Critère clé** | Rapidité de génération (< 60s), gratuité, confidentialité des données, interface simple sans installation |
 
-### 2.2. Cible secondaire — Enseignant·e (persona émergente J1)
+### 2.2. Cible secondaire — Enseignant·e 
 
 | Champ | Détail |
 |---|---|
