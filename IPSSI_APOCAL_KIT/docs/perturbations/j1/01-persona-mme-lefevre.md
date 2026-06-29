@@ -1,6 +1,7 @@
 # Persona Mme Lefèvre — EduTutor IA
 
 > Perturbation J1 · 29/06/2026 · Dépôt : /docs/perturbations/j1/
+> 
 > Membres : Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS
 > Version : v2.0 (post-perturbation J1)  
 > Statut : Draft
