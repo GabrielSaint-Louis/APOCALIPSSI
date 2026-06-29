@@ -86,7 +86,7 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 
 ---
 
-## 2. Persona secondaire — Enseignant·e (persona émergente J1)
+## 2. Persona secondaire — Enseignant·e 
 
 ### 2.1. Identité
 
