@@ -31,7 +31,7 @@ Ce document contient **3 parcours** :
 
 - **Camille Martin** (étudiante, cible primaire)
 - **Mme Sophie Lefèvre** (enseignante, cible primaire intégrée dès le cadrage et la Release 1 sur demande)
-- **M. David Chen** (directeur d'établissement, cible tertiaire B2B)
+- **M. David Chen** (directeur d'établissement, cible secondaire B2B)
 
 > 💡 Le parcours « Établissement » suit un cycle d'achat B2B et non un parcours utilisateur classique. Les 5 étapes sont adaptées en conséquence.
 
@@ -93,7 +93,7 @@ Ce document contient **3 parcours** :
 
 ---
 
-## 3. Parcours Établissement — M. David Chen (cible tertiaire B2B)
+## 3. Parcours Établissement — M. David Chen (cible secondaire B2B)
 
 > **Rappel persona** : David Chen, 51 ans, directeur des études, lycée privé sous contrat, 1 200 élèves, Lyon 6e. Budget edtech ~12 000€/an. Cycle d'achat 6 mois minimum. DPO mutualisé très strict sur le RGPD. A signé 2 outils edtech qui ont fermé en cours d'année — méfiant sur la pérennité. Décide en concertation avec conseil pédagogique, DPO, gestionnaire financier.
 
