@@ -1,7 +1,7 @@
 # Fiches Personas — EduTutor IA
-> CADRAGE MATINAL · ARTEFACT 2 SUR 7  
+> CADRAGE MATINAL · ARTEFACT 2 SUR 7 · Mise à jour post-perturbation J1  
 > Projet EduTutor IA · Édition 2026 · Semaine immersive Scrum  
-> Auteur : Mohamed Amine EL AFRIT · Licence CC BY-NC-SA 4.0
+> Auteur original : Mohamed Amine EL AFRIT · Licence CC BY-NC-SA 4.0
 
 ---
 
@@ -11,12 +11,12 @@
 |---|---|
 | **Équipe n°** | 21 |
 | **Membres** | Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS |
-| **Sprint concerné** | Cadrage |
-| **Version** | v1.0 (initiale) |
-| **Date de remise** | 29/06/2026 avant 13h00 |
+| **Sprint concerné** | Cadrage / Perturbation J1 |
+| **Version** | v2.0 (post-perturbation J1 — fusion des cibles primaires) |
+| **Date de remise** | 29/06/2026 |
 | **Statut** | Draft |
 
-> 💡 Convention de nommage : `equipe-21-persona-v1.0.md`
+> 💡 Convention de nommage : `equipe-21-persona-v2.0.md`
 
 ---
 
@@ -24,13 +24,16 @@
 
 Une persona représente un utilisateur type, construit à partir de données réelles et non d'intuitions. Elle sert à trancher les arbitrages produit : « est-ce que Camille utiliserait vraiment cette fonctionnalité ? » remplace « est-ce que c'est bien ? ».
 
-Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : l'étudiant·e (cible primaire), l'enseignant·e (cible secondaire émergente lors de la perturbation J1), et l'établissement scolaire (cible tertiaire B2B, acheteur).
+**Évolution post-perturbation J1 :** suite au retour très positif de Mme Lefèvre (enseignante) sur la démo de cadrage, le sponsor a demandé l'intégration de cette cible dans le périmètre direct du produit. L'équipe reclasse donc ses 3 cibles :
+
+- **Cible primaire (×2)** : l'étudiant·e (utilisateur direct, usage individuel) et l'enseignant·e (utilisateur direct, usage classe) — deux utilisateurs finaux du produit, avec des parcours différents mais un statut équivalent en priorité.
+- **Cible secondaire** : l'établissement scolaire, acheteur B2B qui ne touche pas directement l'outil mais conditionne son adoption institutionnelle.
 
 > 💡 Travaillez en binôme minimum, jamais en solo (biais de projection).
 
 ---
 
-## 1. Persona primaire — Étudiant·e du supérieur
+## 1. Persona primaire A — Étudiant·e du supérieur
 
 ### 1.1. Identité
 
@@ -86,7 +89,13 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 
 ---
 
-## 2. Persona secondaire — Enseignant·e (Release 2)
+## 2. Persona primaire B — Mme Sophie Lefèvre, Enseignante
+
+> Intégrée en cible **primaire** suite à la perturbation J1 (29/06, 14h00) : retour sponsor très positif, demande explicite d'intégration au périmètre direct du produit.
+
+### Contexte de la perturbation
+
+> *« C'est exactement l'outil qu'il me faut pour suivre la progression de mes 28 étudiants en révision d'examens. Je veux pouvoir voir leurs scores, repérer ceux qui décrochent, et leur envoyer des conseils. »* — Mme Lefèvre, retour sponsor du 29/06
 
 ### 2.1. Identité
 
@@ -94,57 +103,81 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 |---|---|
 | **Nom / Prénom** | Mme Sophie Lefèvre |
 | **Âge** | 42 ans |
-| **Profession** | Professeure de Communication, BTS, lycée privé sous contrat |
-| **Localisation** | Lyon · trajet voiture 25 min · établissement Lyon 6e |
+| **Profession** | Professeure de Communication, BTS 1ère année, lycée privé sous contrat |
+| **Localisation** | Lyon 6e · trajet voiture 25 min |
 | **Situation** | Mariée, 2 enfants (12 et 15 ans), salaire ~2 700€ net/mois |
+| **Classe** | 28 étudiants BTS Communication 1ère année |
 | **Photo / avatar** | [ Insérer image ou avatar fictif ] |
 
 ### 2.2. Contexte d'usage
 
-- **28 étudiants** dans sa classe BTS Communication 1re année
-- **6h de cours/semaine** + ~3h de préparation + ~3h de correction = **12h/semaine** de travail enseignant
-- Salle informatique disponible mais réseau lent (4G partagée pour les étudiants)
-- Son établissement lui impose de rester sur des outils conformes RGPD — le DPO a déjà bloqué ChatGPT
-- Utilise Word + Excel au quotidien, autonome sur Moodle et Pronote
+- **Charge hebdomadaire :** 6h de cours + ~3h de préparation + ~3h de correction = **~12h/semaine** hors cours
+- **Équipement perso :** laptop Windows 11, smartphone Android (Samsung Galaxy A54)
+- **Équipement établissement :** salle informatique disponible mais réseau lent (4G partagée) ; vidéoprojecteur fixe en classe
+- **Étudiants :** smartphones Android personnels (mix modèles 2018-2023), accès ENT via navigateur
+- **Contrainte légale :** DPO de l'établissement refuse tout outil utilisant OpenAI ou des serveurs hors UE — a déjà bloqué ChatGPT
+- **Rythme de préparation :** crée 1 quiz par chapitre, ~3 chapitres/mois soit ~9 quiz/mois à concevoir et corriger
 
 ### 2.3. Compétences numériques
 
-- Power user Word + Excel, autonome sur Moodle et Pronote
-- Pas développeuse, allergique aux installations CLI ou outils complexes
-- A testé ChatGPT 2 fois, impressionnée par la rapidité mais méfiante sur la conformité légale
-- Suit l'actualité edtech via Twitter/X et la newsletter Café Pédagogique
-- Exige des engagements écrits avant d'adopter un nouvel outil numérique
+- **Power user :** Word + Excel (mise en forme avancée), Moodle (dépôt de cours, quiz basique), Pronote (notes, absences)
+- **Autonome :** ENT scolaire, envoi de fichiers, visioconférence (Teams)
+- **Limite :** pas développeuse, allergique aux installations en ligne de commande (CLI), ne comprend pas les notions d'API ou de Docker
+- **IA :** a testé ChatGPT 2 fois, impressionnée par la rapidité mais méfiante sur la fiabilité factuelle et la conformité légale
+- **Veille :** suit l'actualité edtech via Twitter/X et la newsletter Café Pédagogique
 
 ### 2.4. Frustrations / pain points (chiffrés)
 
-- Corrige **28 copies × 3 quiz/semaine = ~12h de correction/mois**, chronophage
-- Créer **1 quiz cohérent manuellement prend ~90 minutes** — elle en fait 3 par semaine
-- Pas de variation des questions : les étudiants **se passent les réponses** entre cours
-- Les outils US (ChatGPT, Quizlet) **ne sont pas conformes RGPD** — refus du DPO de l'établissement
-- Si l'outil invente des erreurs factuelles, elle ne peut pas le donner à ses élèves
+- **~90 min** pour créer 1 quiz cohérent et varié depuis zéro (soit ~13h30/mois en conception)
+- **28 copies × 3 quiz/semaine** à corriger = **~12h de correction/mois** pour des QCM qu'une machine pourrait corriger
+- Les étudiants **se repassent les réponses** entre promotions : les mêmes questions perdent leur intérêt pédagogique
+- Les outils IA existants (ChatGPT, Quizlet) **bloqués par le DPO** de l'établissement
+- Peur de l'**hallucination factuelle** : *« Si l'outil invente une erreur de SVT ou de droit, je la donne à mes 28 élèves. »*
+- Pas de **tableau de bord** : elle ne sait pas qui décroche avant qu'il soit trop tard
 
 ### 2.5. Objectifs (jobs-to-be-done, SMART)
 
-- Générer **1 quiz personnalisé en moins de 5 minutes** sur n'importe quel chapitre (vs 90 min aujourd'hui)
-- Garantir que les données de ses cours **ne quittent jamais un serveur tiers** (RGPD établissement)
-- **Exporter les quiz en Word/PDF** pour impression directe en salle des profs
-- Suivre l'engagement de sa classe : **qui a répondu, score moyen, lacunes communes**
+- **Gagner du temps :** générer 1 quiz personnalisé en **moins de 5 minutes** sur n'importe quel chapitre (vs 90 min aujourd'hui)
+- **Fiabilité :** obtenir des questions ancrées dans son cours fourni, vérifiables et traçables à une source
+- **Suivi :** visualiser les scores de ses 28 étudiants, identifier ceux qui décrochent en **3 clics maximum**
+- **Conformité :** utiliser un outil validé par le DPO (conformité RGPD documentée, données hébergées en France)
+- **Export :** exporter le quiz en Word ou PDF pour impression en salle des profs ou dépôt sur Moodle
 
 ### 2.6. Critères de succès personnels
 
-> *"Si je gagne 1h/semaine sur ma préparation, j'adopte définitivement et j'en parle à mes collègues."*
+> *« Si je gagne 1h/semaine sur ma préparation, j'adopte définitivement et j'en parle à mes collègues. »*
 
-> *"Si ça plante 1 fois en cours devant 28 ados, je n'y reviens jamais."*
+> *« Si ça plante 1 fois en cours devant 28 ados, je n'y reviens jamais. »*
 
-> *"Si l'outil invente des erreurs factuelles, je ne peux pas le donner à mes élèves."*
+> *« Si l'outil invente des erreurs factuelles, je ne peux pas le donner à mes élèves. »*
 
-> *"Si je peux exporter en Word pour l'imprimer en salle des profs, c'est parfait."*
+> *« Si je peux exporter en Word pour l'imprimer en salle des profs, c'est parfait. »*
+
+> *« Si je vois en un coup d'œil quels étudiants décrochent, ça change tout à mon suivi. »*
 
 ---
 
-## 3. Persona tertiaire — Établissement scolaire (acheteur B2B)
+## 3. Comparatif des deux personas primaires
 
-### 3.1. Identité
+| Dimension | Camille (étudiant) | Mme Lefèvre (enseignant) |
+|---|---|---|
+| Motif d'usage | Réviser son propre cours | Générer des évaluations pour sa classe |
+| Fréquence d'usage | 2-3 fois/semaine | 1-2 fois/mois par séquence |
+| Volume par session | 1 quiz, usage solo | 1 quiz pour 28 étudiants |
+| Critère bloquant | Qualité des questions / confidentialité | Conformité RGPD / fiabilité factuelle |
+| Cycle d'adoption | Individuelle, immédiate | Plus lente : validation DPO en amont |
+| Feature clé attendue | Quiz + historique perso | Quiz + dashboard classe + export Word/PDF |
+| Volume marché FR | ~2,7M étudiants du supérieur (MESR 2024) | ~770 000 enseignants (Éducation nationale 2024) |
+
+> Ces deux personas partagent le même besoin racine — générer un quiz fiable à partir d'un cours fourni — mais avec des contextes d'usage, des fréquences et des critères de succès différents. Le MVP (F1-F6) sert en priorité Camille ; les features dashboard/export pour Mme Lefèvre sont à arbitrer en MoSCoW (cf. note de décision J1).
+
+---
+
+## 4. Persona secondaire — Établissement scolaire (acheteur B2B)
+
+> Reclassée de tertiaire à **secondaire** : l'établissement ne touche pas l'outil au quotidien, mais conditionne l'adoption institutionnelle de Mme Lefèvre et de ses collègues — son rôle de décideur/payeur reste central pour la stratégie B2B.
+
+### 4.1. Identité
 
 | Champ | Valeur |
 |---|---|
@@ -155,7 +188,7 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 | **Situation** | Marié, enfants grands, 25 ans d'expérience enseignement |
 | **Photo / avatar** | [ Insérer image ou avatar fictif ] |
 
-### 3.2. Contexte d'achat
+### 4.2. Contexte d'achat
 
 - Budget edtech **~12 000€/an** pour l'ensemble du lycée (10€/élève × 1 200)
 - **Cycle d'achat : 6 mois minimum** (validation pédagogique + DPO + comptabilité)
@@ -163,28 +196,28 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 - Choisit les outils edtech **1 fois/an**, en mai/juin pour la rentrée de septembre
 - A déjà signé pour 2 outils edtech qui ont fermé en cours d'année — méfiant sur la pérennité
 
-### 3.3. Compétences numériques
+### 4.3. Compétences numériques
 
 - Utilisateur courant ENT/Pronote, gère les comptes profs et élèves
 - Pas technique, fait confiance au DSI mutualisé du réseau d'établissements
 - Lit les CGV/CGU, **exige des engagements RGPD écrits et signés** avant tout déploiement
 - Suit les recommandations de la CNIL et de son DPO à la lettre
 
-### 3.4. Frustrations / pain points (chiffrés)
+### 4.4. Frustrations / pain points (chiffrés)
 
 - DPO refuse **systématiquement** les outils utilisant OpenAI ou des LLM US (transferts hors UE)
 - Pression du conseil d'administration pour démontrer une **"stratégie IA pédagogique"** sans budget supplémentaire
 - **2 outils edtech sur les 5 derniers** ont fermé en cours d'année — pertes sèches
 - Profs râlent quand on impose un nouvel outil sans adhésion préalable — taux d'adoption < 20 % sur le dernier outil
 
-### 3.5. Objectifs (jobs-to-be-done)
+### 4.5. Objectifs (jobs-to-be-done)
 
 - Disposer d'un outil edtech **RGPD conforme**, signable sans risque juridique pour le DPO
 - **Tarification prévisible par élève / par an**, sans surprise au renouvellement
 - Adhésion d'au moins **30 % des profs** dès la première année (sinon échec budgétaire)
 - Pouvoir dire au CA **"on est en avance sur l'IA"** avec des preuves concrètes d'usage
 
-### 3.6. Critères de succès personnels
+### 4.6. Critères de succès personnels
 
 > *"Si le DPO valide les CGV en 30 min de lecture, c'est un signal positif."*
 
@@ -196,15 +229,15 @@ Ce document contient 3 personas couvrant les 3 cibles du Product Vision Board : 
 
 ---
 
-## 4. Anti-personas (qui n'est PAS la cible)
+## 5. Anti-personas (qui n'est PAS la cible)
 
-### 4.1. Anti-persona du persona Étudiant
+### 5.1. Anti-persona du persona Étudiant
 Élève de primaire ou collège (< 15 ans). EduTutor exige un cours fourni au format PDF ou texte de niveau supérieur. L'autonomie nécessaire (uploader, contextualiser, interpréter les résultats) n'est pas alignée avec ce profil. Ne pas chercher à les attirer.
 
-### 4.2. Anti-persona du persona Enseignant
+### 5.2. Anti-persona du persona Enseignant
 Enseignant·e du primaire ou retraité·e en autoformation. Le besoin de générer des supports d'évaluation à grande échelle (28 étudiants × 3 quiz/semaine) n'existe pas dans ces contextes. Ne pas chercher à élargir l'offre vers ces profils.
 
-### 4.3. Anti-persona du persona Établissement
+### 5.3. Anti-persona du persona Établissement
 École internationale tournée vers OpenAI/Anthropic, sans contrainte RGPD. Notre différenciation est précisément le local-first et la souveraineté des données. Une école qui valorise un partenariat OpenAI n'achètera jamais EduTutor — et inversement, ce n'est pas un marché à courir.
 
 ---
@@ -213,15 +246,16 @@ Enseignant·e du primaire ou retraité·e en autoformation. Le besoin de génér
 
 | Critère qualité | Auto-évaluation | Commentaire / preuve |
 |---|---|---|
-| Les 3 personas sont nommés concrètement (prénom + nom + âge précis) | ✅ Oui | Camille Martin 21 ans / Mme Sophie Lefèvre 42 ans / M. David Chen 51 ans |
+| Les personas sont nommés concrètement (prénom + nom + âge précis) | ✅ Oui | Camille Martin 21 ans / Mme Sophie Lefèvre 42 ans / M. David Chen 51 ans |
 | Chaque persona comporte les 6 dimensions complétées | ✅ Oui | Identité, contexte, compétences, frustrations, objectifs, critères — présents pour les 3 |
-| Le contexte précise un volume horaire et un environnement physique | ✅ Oui | Camille : 8h/sem, soirée 19h-22h, BU / Lefèvre : 12h/sem, salle info réseau lent |
-| Les compétences numériques sont nuancées (pas juste "bon en info") | ✅ Oui | 5 points par persona avec niveaux différenciés et exemples concrets |
+| Le contexte précise un volume horaire et un environnement physique | ✅ Oui | Camille : 8h/sem, soirée, BU / Lefèvre : 12h/sem, salle info réseau lent |
+| Les compétences numériques sont nuancées | ✅ Oui | 5 points par persona avec niveaux différenciés et exemples concrets |
 | Les frustrations sont chiffrées au moins 3 fois sur 5 par persona | ✅ Oui | Camille : 3h/sem, 100%, 3 semaines / Lefèvre : 12h/mois, 90 min, 28 copies / Chen : 2/5 outils, 20% adoption |
-| Les objectifs respectent au moins partiellement le format SMART | ✅ Oui | Chaque objectif a un chiffre et un délai (< 5 min, 2 semaines avant, ~2h/semaine) |
-| Les critères de succès sont formulés au point de vue persona (entre guillemets, au "je") | ✅ Oui | 4 citations au "je" par persona, toutes entre guillemets |
-| Les 3 anti-personas sont décrits avec justification (pourquoi exclu) | ✅ Oui | Section 4 : 3 anti-personas avec raison d'exclusion argumentée |
-| Le document a été relu et validé par l'équipe complète | ☐ Partiel | À valider collectivement avant 13h |
+| Les objectifs respectent au moins partiellement le format SMART | ✅ Oui | Chaque objectif a un chiffre et un délai |
+| Les critères de succès sont formulés au "je", entre guillemets | ✅ Oui | 4-5 citations au "je" par persona |
+| Les 3 anti-personas sont décrits avec justification | ✅ Oui | Section 5 |
+| Le reclassement primaire/secondaire est justifié et tracé | ✅ Oui | Section 3 (comparatif) + mention explicite perturbation J1 |
+| Le document a été relu et validé par l'équipe complète | ☐ Partiel | À valider collectivement avant dépôt |
 
 ---
 
@@ -233,4 +267,8 @@ Enseignant·e du primaire ou retraité·e en autoformation. Le besoin de génér
 - Scrum Guide officiel FR : scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-French.pdf
 - Site APOCAL'IPSSI : mohamedelafrit.com/teaching/APOCALIPSSI
 
+### Convention de versionnement
 
+- v1.0 : version initiale, cadrage matinal (étudiant primaire, enseignant secondaire/Release 2, établissement tertiaire)
+- **v2.0 : révision post-perturbation J1** — étudiant et enseignant reclassés primaires, établissement reclassé secondaire
+- Chaque version est commitée séparément avec message Git explicite (`docs(personas): reclassement primaire suite perturbation J1`)
