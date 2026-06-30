@@ -16,7 +16,7 @@
 | **Date de remise** | 29/06/2026 |
 | **Statut** | Draft |
 
-> 💡 Convention de nommage : `equipe-21-persona-v2.0.md`
+> 💡 Convention de nommage : `equipe-21-persona-v2.1.md`
 
 ---
 
