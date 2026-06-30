@@ -12,11 +12,11 @@
 | **Équipe n°** | 21 |
 | **Membres** | Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS |
 | **Sprint concerné** | Cadrage |
-| **Version** | v1.0 (initiale) |
-| **Date de remise** | 29/06/2026 avant 13h00 |
+| **Version** | v1.1(aprés perturbation J1) |
+| **Date de remise** | 30/06/2026 |
 | **Statut** | Draft |
 
-> 💡 Convention de nommage : `equipe-21-vision-board-v1.0.md`
+> 💡 Convention de nommage : `equipe-21-vision-board-v1.1.md`
 
 ---
 
@@ -30,14 +30,14 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 
 ## 1. Vision
 
-**Pour** les étudiant·e·s du supérieur
+**Pour** les étudiant·e·s du supérieur Et enseignants
 **Qui** veulent réviser ou évaluer efficacement à partir de leurs propres cours  
 **EduTutor IA** est une application web de génération automatique de quiz QCM  
 **Qui** transforme n'importe quel PDF ou texte en quiz corrigé instantanément, sans que les données ne quittent le serveur  
 **Contrairement à** Quizlet AI, Wilgo ou Khanmigo  
 **Notre produit** s'appuie sur un LLM local (Ollama), garantit la souveraineté des données, respecte le RGPD sans compromis, et propose des prompts métier pensés pour les enseignants
 
-> **Notre vision finalisée :** Permettre à chaque étudiant·e du supérieur de transformer n'importe quel cours en quiz personnalisé en moins de 60 secondes, avec une IA locale qui ne transmet aucune donnée hors du serveur — offrant la même qualité pédagogique que les tuteurs privés sans le coût ni le risque RGPD.
+> **Notre vision finalisée :** Permettre à chaque étudiant·e du supérieur et enseignants de transformer n'importe quel cours en quiz personnalisé en moins de 60 secondes, avec une IA locale qui ne transmet aucune donnée hors du serveur — offrant la même qualité pédagogique que les tuteurs privés sans le coût ni le risque RGPD.
 
 ---
 
@@ -52,7 +52,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 | **Pain point** | ~3h/semaine perdues à chercher des fiches de révision alignées sur leur cours réel |
 | **Critère clé** | Rapidité de génération (< 60s), gratuité, confidentialité des données, interface simple sans installation |
 
-### 2.2. Cible secondaire — Enseignant·e
+### 2.2. Cible primaire — Enseignant·e 
 
 | Champ | Détail |
 |---|---|
@@ -61,8 +61,8 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 | **Pain point** | ~12h/mois en correction + 90 min pour créer un seul quiz manuellement |
 | **Critère clé** | Interface simple, conformité RGPD non négociable, export Word/PDF pour impression |
 
-### 2.3. Cible tertiaire — Établissement scolaire (acheteur B2B)
-
+### 2.3. Cible secondaire — Établissement scolaire (acheteur B2B)
+s
 | Champ | Détail |
 |---|---|
 | **Profil** | Direction de lycée privé · ENT scolaire · responsable pédagogique d'école supérieure |
@@ -105,7 +105,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 - **Architecture réversible** : multi-fournisseurs LLM (Ollama par défaut, bascule cloud via ADR documenté)
 - **Ancrage pédagogique** : prompts métier pensés pour les enseignants, pas des résumés génériques
 
-### 4.1. MVP must-have (Release 1)
+### 4.1. MVP must-have (Release 1) 
 
 | ID | Fonctionnalité |
 |---|---|
@@ -116,7 +116,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 | **F5** | Affichage score /10 + détail bonnes/mauvaises réponses question par question |
 | **F6** | Historique persisté des quiz par utilisateur (date, cours, score) |
 
-### 4.2. Pistes Release 2
+### 4.2. Pistes Release 2 
 
 - **Bouton "Signaler une erreur"** → boucle de feedback utilisateur directe, lié perturbation J4
 - **Export RGPD (endpoint SAR Art. 15)** → droit d'accès utilisateur, lié perturbation J3-bis
