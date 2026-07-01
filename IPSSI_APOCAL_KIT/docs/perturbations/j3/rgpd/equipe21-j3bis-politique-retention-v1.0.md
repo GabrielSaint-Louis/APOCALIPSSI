@@ -1,10 +1,15 @@
 # Politique de rétention des données — EduTutor IA
 
 **Document :** equipe21-j3bis-politique-retention-v1.0.md
+
 **Projet :** EduTutor IA
+
 **Équipe :** Groupe 21
+
 **Version :** v1.0
+
 **Date :** 01/07/2026
+
 **Statut :** Livrable J3-bis — RGPD
 
 ---
