@@ -249,7 +249,6 @@ Cette politique est revue :
 * après incident sécurité ;
 * après changement réglementaire.
 
-Version actuelle :
-
+Version actuelle : 
 **v1.0 — 01/07/2026**
 
