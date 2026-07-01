@@ -11,6 +11,11 @@
 # volontairement AUTONOME : il n'importe que le module de défense du projet
 # (backend/llm/services/quiz_prompt.py), sans Django ni base de données. Ce job
 # est donc rapide et sans dépendance (bibliothèque standard Python uniquement).
+#
+# IMPORTANT : ce fichier DOIT rester à la racine du dépôt (.github/workflows/).
+# GitHub Actions n'exécute QUE les workflows situés à la racine ; le projet étant
+# rangé sous IPSSI_APOCAL_KIT/, tous les chemins ci-dessous sont préfixés en
+# conséquence.
 # ============================================================================
 
 name: Security Tests (Prompt Injection)
@@ -50,4 +55,4 @@ jobs:
       - name: Exécuter le jeu de tests adversariaux
         # Le script renvoie un code de sortie non nul si UNE attaque n'est pas
         # neutralisée → le job échoue et bloque la PR (garde-fou anti-régression).
-        run: python docs/perturbations/j3/securite/equipe21-j3-tests-adversariaux-v1.0.py
+        run: python IPSSI_APOCAL_KIT/docs/perturbations/j3/securite/equipe21-j3-tests-adversariaux-v1.0.py
