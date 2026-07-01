@@ -1,0 +1,53 @@
+# ============================================================================
+# IPSSI_APOCAL_KIT — Équipe 21 — CI Sécurité (Prompt Injection)
+# ----------------------------------------------------------------------------
+# Perturbation J3 « Conformité / Éthique » — OWASP LLM01:2025 Prompt Injection.
+#
+# Objectif (critère CA-J3-6) : exécuter AU MOINS 1 test adversarial à CHAQUE
+# push et CHAQUE pull request. Sans test automatisé, une régression de sécurité
+# (ex. un futur refactor qui casse la validation post-LLM) reviendrait en douce.
+#
+# Le jeu de tests adversariaux (equipe21-j3-tests-adversariaux-v1.0.py) est
+# volontairement AUTONOME : il n'importe que le module de défense du projet
+# (backend/llm/services/quiz_prompt.py), sans Django ni base de données. Ce job
+# est donc rapide et sans dépendance (bibliothèque standard Python uniquement).
+# ============================================================================
+
+name: Security Tests (Prompt Injection)
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  # Force l'UTF-8 (les messages de test contiennent des accents). Sans effet
+  # notable sur Ubuntu, mais garantit un comportement identique partout.
+  PYTHONUTF8: '1'
+  PYTHONIOENCODING: 'utf-8'
+
+jobs:
+
+  # --------------------------------------------------------------------------
+  # Tests adversariaux — jeu de 7 attaques (directe, indirecte, multi-langue,
+  # base64, Unicode, jailbreak/extraction, hors-schéma) + non-régression.
+  # --------------------------------------------------------------------------
+  adversarial:
+    name: Prompt injection — jeu de tests adversariaux
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du dépôt
+        uses: actions/checkout@v5
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Exécuter le jeu de tests adversariaux
+        # Le script renvoie un code de sortie non nul si UNE attaque n'est pas
+        # neutralisée → le job échoue et bloque la PR (garde-fou anti-régression).
+        run: python docs/perturbations/j3/securite/equipe21-j3-tests-adversariaux-v1.0.py
