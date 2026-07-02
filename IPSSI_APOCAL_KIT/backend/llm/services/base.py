@@ -24,3 +24,13 @@ class LLMClient(ABC):
 
 class LLMError(Exception):
     """Erreur générique côté LLM (indisponibilité, parsing, validation)."""
+
+
+class QuizValidationError(LLMError):
+    """Sortie LLM structurellement/contenu invalide (échec de la validation J3).
+
+    Sous-classe de LLMError : tout code qui n'attrape que `LLMError` continue de
+    fonctionner. On la DISTINGUE pour la couche 4 (re-prompt) : on RÉ-ESSAIE sur
+    une erreur de validation (le modèle peut mieux faire au 2ᵉ essai), mais PAS
+    sur une erreur de transport (LLM injoignable → retenter est inutile).
+    """
