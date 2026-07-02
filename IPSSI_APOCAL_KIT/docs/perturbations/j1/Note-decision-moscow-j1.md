@@ -36,11 +36,11 @@ Les besoins propres à Mme Lefèvre génèrent **5 nouvelles user stories** :
 
 | ID | User Story | SP estimés | MoSCoW |
 |---|---|---|---|
-| US-E1 | En tant qu'enseignante, je veux voir les scores de tous mes étudiants sur un quiz afin d'identifier ceux qui décrochent | 5 | SHOULD |
-| US-E2 | En tant qu'enseignante, je veux exporter les résultats d'un quiz en CSV afin de les intégrer dans mon suivi Pronote | 3 | COULD |
-| US-E3 | En tant qu'enseignante, je veux envoyer un message de conseil à un étudiant depuis l'app afin de l'accompagner | 8 | COULD |
-| US-E4 | En tant qu'enseignante, je veux créer un quiz partageable par lien afin que mes 28 étudiants le passent depuis leur smartphone | 8 | SHOULD |
-| US-E5 | En tant qu'enseignante, je veux voir un dashboard de progression par étudiant afin de repérer les lacunes communes | 5 | COULD |
+| US-E1 | En tant qu'enseignante, je veux voir les scores de tous mes étudiants sur un quiz afin d'identifier ceux qui décrochent | 5 | MUST |
+| US-E2 | En tant qu'enseignante, je veux exporter les résultats d'un quiz en CSV afin de les intégrer dans mon suivi Pronote | 3 | MUST |
+| US-E3 | En tant qu'enseignante, je veux envoyer un message de conseil à un étudiant depuis l'app afin de l'accompagner | 8 | MUST |
+| US-E4 | En tant qu'enseignante, je veux créer un quiz partageable par lien afin que mes 28 étudiants le passent depuis leur smartphone | 8 | MUST |
+| US-E5 | En tant qu'enseignante, je veux voir un dashboard de progression par étudiant afin de repérer les lacunes communes | 5 | MUST |
 
 **Total nouvelles stories enseignant : 29 SP**
 
