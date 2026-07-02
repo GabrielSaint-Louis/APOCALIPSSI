@@ -65,7 +65,7 @@ Coût stories enseignant prioritaires (US-E1 + US-E4) : **13 SP**
 
 ## Décision
 
-### ✅ Cible enseignante : **SHOULD pour la Release 1**
+### ✅ Cible enseignante : **MUST pour la Release 1**
 
 **Justification :**
 
@@ -75,7 +75,7 @@ Coût stories enseignant prioritaires (US-E1 + US-E4) : **13 SP**
 
 3. **Valeur stratégique forte** : Mme Lefèvre représente la cible B2B enseignant, levier d'acquisition institutionnelle (établissements scolaires). La négliger en Release 1 reviendrait à manquer une opportunité de différenciation face aux concurrents (Wilgo, Quizlet) qui sont étudiant-first.
 
-4. **Risque maîtrisé** : en classant la cible en SHOULD (pas MUST), l'équipe préserve la priorité absolue du MVP étudiant F1–F6. Si la capacité manque en S4/S5, les stories enseignant sont sacrifiées sans mettre en péril la Release 1.
+4. **Risque maîtrisé** : en classant la cible en MUST (pas SHOULD), l'équipe préserve la priorité absolue du MVP étudiant F1–F6. Si la capacité manque en S4/S5, les stories enseignant sont sacrifiées sans mettre en péril la Release 1.
 
 ### Ce qui est sacrifié si capacité insuffisante
 
