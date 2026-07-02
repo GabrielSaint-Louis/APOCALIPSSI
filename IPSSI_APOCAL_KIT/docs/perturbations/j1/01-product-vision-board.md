@@ -12,8 +12,8 @@
 | **Équipe n°** | 21 |
 | **Membres** | Nicolas CATALUNA, Celia MERABET, Monica RADIFERA RASAMOELIJAONA, Nolan LEFEBVRE, Ilham KADRI, Gabriel SAINT-LOUIS |
 | **Sprint concerné** | Cadrage |
-| **Version** | v3(aprés perturbation J4) |
-| **Date de remise** | 02/07/2026 |
+| **Version** | v1.1(aprés perturbation J1) |
+| **Date de remise** | 30/06/2026 |
 | **Statut** | Draft |
 
 > 💡 Convention de nommage : `equipe-21-vision-board-v1.1.md`
@@ -37,7 +37,7 @@ Le Product Vision Board, formalisé par Roman Pichler, condense en une seule pag
 **Contrairement à** Quizlet AI, Wilgo ou Khanmigo  
 **Notre produit** s'appuie sur un LLM local (Ollama), garantit la souveraineté des données, respecte le RGPD sans compromis, et propose des prompts métier pensés pour les enseignants
 
-> **Notre vision finalisée :** "Permettre à chaque étudiant·e du supérieur — en France et à l'international — de transformer n'importe quel cours en quiz personnalisé en moins de 60 secondes, dans sa langue, accessible à tous y compris en situation de handicap, avec une IA locale qui ne transmet aucune donnée hors du territoire UE."
+> **Notre vision finalisée :** Permettre à chaque étudiant·e du supérieur et enseignants de transformer n'importe quel cours en quiz personnalisé en moins de 60 secondes, avec une IA locale qui ne transmet aucune donnée hors du serveur — offrant la même qualité pédagogique que les tuteurs privés sans le coût ni le risque RGPD.
 
 ---
 
@@ -70,14 +70,6 @@ s
 | **Pain point** | Budget edtech contraint (< 5€/élève/an) + obligation RGPD non négociable + cycle d'achat 6 mois |
 | **Critère clé** | Conformité RGPD signée, tarification prévisible par élève/an, adhésion des enseignants préalable |
 
-### 2.4. Cible tertiaire — Étudiant·e international·e / Erasmus
-
-| Champ | Détail |
-|---|---|
-| **Profil** | 18-25 ans · L1-M2 (Bac+1 à Bac+5) · usage smartphone et laptop quotidien |
-| **Volume FR** | ~2,7 millions d'étudiants dans le supérieur (chiffres MESR 2024) |
-| **Pain point** | ~3h/semaine perdues à chercher des fiches de révision alignées sur leur cours réel |
-| **Critère clé** | Rapidité de génération (< 60s), gratuité, confidentialité des données, interface simple sans installation |
 ---
 
 ## 3. Needs (besoins résolus)
@@ -90,14 +82,14 @@ s
 - Utiliser un outil gratuit, sans abonnement, sans que ses données de cours quittent son poste
 - Consulter l'historique de ses quiz pour piloter sa progression dans le temps
 
-### 3.2. Besoins de la cible secondaire (Enseignant)
+### 3.2. Besoins de la cible primaire (Enseignant)
 
 - Préparer des supports d'évaluation QCM alignés sur son programme en **moins de 5 minutes** (vs 90 min manuellement)
 - Garantir que les contenus de ses cours ne quittent jamais un serveur tiers (conformité RGPD établissement)
 - Exporter les quiz générés en Word/PDF pour impression directe en salle des profs
 - Suivre l'engagement de sa classe (qui a répondu, score moyen, lacunes communes)
 
-### 3.3. Besoins de la cible tertiaire (Établissement)
+### 3.3. Besoins de la cible secondaire (Établissement)
 
 - Disposer d'un outil edtech RGPD conforme, sans transfert de données hors UE, signable sans risque juridique
 - Tarification prévisible **par élève / par an**, sans surprise au renouvellement
